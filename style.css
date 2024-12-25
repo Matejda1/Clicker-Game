@@ -4,12 +4,14 @@
 }
 
 
-#game{
-    display: none;
-}
-#login{
+.game {
     display: block;
 }
+
+.login {
+    display: none;
+}
+
 /* All game */
 
 .game {

@@ -5,33 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- === External Css === -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body draggable="false">
 
+    <!-- Login Page -->
     <div class="login" id="login">
         <input id="input" type="text">
         <input id="input2" type="text">
         <input class="input-button" type="button" value="Submit" onClick="postCode()">
     </div>
-    <div class="game" id="game">
+
+    <!-- === All game ===-->
+    <div class="game">
         <div class="stats">
             <p>Bitcoins: <strong><span id="bitcoins">0</span></strong></p>
             <p>Bitcoins per Click: <strong><span id="bpc">1</span></strong></p>
             <p>Bitcoins per Second: <strong><span id="bps">0</span></strong></p>
         </div>
+
+        <!-- === Upgrades === -->
         <div class="upgrades">
             <p><strong>Upgrades:</strong></p>
+
+            <!-- == Upgardes to Add Bitcoin every Click == -->
             <div class="upgrade">
                 <p class="name"><strong>Bitcoin miner</strong></p>
                 <p class="upgradeDescription">+<span id="upgrade1Add">1</span> Bitcoin per Click</p>
                 <p class="upgradeOwned">Owned: <span id="upgrade1Owned">0</span></p>
                 <div class="upgradeCostButton" onclick="upgrade1()">
-                    <p class="upgradeCost"><strong>Cost: <span id="upgrade1Cost">10</span></strong></p>
+                    <p class="upgradeCost"><strong>Cost: <span id="upgrade1Cost">25</span></strong></p>
+                </div>
+            </div>
+            <div class="upgrade">
+                <p class="name"><strong>Bitcoin miner</strong></p>
+                <p class="upgradeDescription">+<span id="upgrade2Add">5</span> Bitcoin per Click</p>
+                <p class="upgradeOwned">Owned: <span id="upgrade2Owned">0</span></p>
+                <div class="upgradeCostButton" onclick="upgrade2()">
+                    <p class="upgradeCost"><strong>Cost: <span id="upgrade2Cost">75</span></strong></p>
+                </div>
+            </div>
+
+            <!-- == Upgrades to Add Bitcoin every Second == -->
+            <div class="upgrade">
+                <p class="name"><strong>Bitcoin miner</strong></p>
+                <p class="upgradeDescription">+<span id="upgrade1AddS">1</span> Bitcoin per Second</p>
+                <p class="upgradeOwned">Owned: <span id="upgrade1OwnedS">0</span></p>
+                <div class="upgradeCostButton" onclick="upgrade1S()">
+                    <p class="upgradeCost"><strong>Cost: <span id="upgrade1CostS">150</span></strong></p>
                 </div>
             </div>
         </div>
+
+        <!-- === Clicking Bitcoin === -->
         <div class="bitcoin" style="width: 319px; height: 380px; background-color: white;">
             <svg onclick="addBitcoin()" xmlns="http://www.w3.org/2000/svg" width="320" height="400"
                 viewBox="0.004 0 63.993 64">
@@ -44,16 +73,17 @@
             </svg>
         </div>
 
+        <!-- === External JavaScript === -->
         <script src="script.js"></script>
         <script>
             var input = document.getElementById("input");
             var input2 = document.getElementById("input2");
             function postCode() {
                 if (input.value == "Admin", input2.value == "Admin111") {
-                    document.getElementById("game").style.display = "block"
-                    document.getElementById("login").style.display = "none"
+                    document.getElementsByClassName("game").style.display = "block"
+                    document.getElementsByClassName("login").style.display = "none"
                 }
-            }
+            } 
         </script>
 </body>
 
