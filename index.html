@@ -13,7 +13,7 @@
 <body draggable="false">
 
     <!-- Login Page -->
-    <div class="login" id="login">
+    <div class="login">
         <input id="input" type="text">
         <input id="input2" type="text">
         <input class="input-button" type="button" value="Submit" onClick="postCode()">
@@ -80,8 +80,8 @@
             var input2 = document.getElementById("input2");
             function postCode() {
                 if (input.value == "Admin", input2.value == "Admin111") {
-                    document.getElementsByClassName("game").style.display = "block"
-                    document.getElementsByClassName("login").style.display = "none"
+                    document.querySelector(".login").style.display = "none";
+                    document.querySelector(".game").style.display = "block";
                 }
             } 
         </script>

@@ -3,13 +3,8 @@
     padding: 0;
 }
 
-
-.game {
-    display: block;
-}
-
 .login {
-    display: none;
+    display: block;
 }
 
 /* All game */
@@ -30,6 +25,7 @@
     border: 3px solid black;
     border-radius: 7px;
     background-color: aqua;
+    display: none;
 }
 
 .stats {
