@@ -11,13 +11,13 @@ const bpsText = document.querySelector("#bps");
 // Upgrade for Add Bitcoin every click
 
 // First Upgrade Let
-let upgrade1Add = 1;
+let upgrade1Add = 0.5;
 let upgrade1Cost = 25;
 let upgrade1Owned = 0;
 
 // Second Upgrade Let
-let upgrade2Add = 5;
-let upgrade2Cost = 75;
+let upgrade2Add = 2.5;
+let upgrade2Cost = 100;
 let upgrade2Owned = 0;
 
 // First Upgrade Const
@@ -76,7 +76,7 @@ setInterval(() => {
 // First upgrade Let
 let upgrade1AddS = 1;
 let upgrade1OwnedS = 0;
-let upgrade1CostS = 150;
+let upgrade1CostS = 500;
 
 // First upgrade Const
 const upgrade1AddTextS = document.querySelector("#upgrade1AddS");
@@ -99,3 +99,12 @@ function upgrade1S() {
         bitcoinsText.innerText = bitcoin.toFixed(1);
     }
 }
+
+// End of game 
+/* let achivments = 10;
+
+function end(){
+    if(achivments=10, bitcoin = 10000){
+        alert("End of game")
+    }
+} */

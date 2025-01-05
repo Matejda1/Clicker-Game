@@ -18,6 +18,8 @@
 }
 
 .game {
+    display: none;
+
     max-width: 650px;
     margin-top: 15px;
     margin-left: auto;
@@ -25,7 +27,6 @@
     border: 3px solid black;
     border-radius: 7px;
     background-color: aqua;
-    display: none;
 }
 
 .stats {
@@ -33,6 +34,7 @@
     justify-content: space-between;
     padding: 5px 5px;
     grid-area: stats;
+    max-height: 400px;
 }
 
 .upgrades {

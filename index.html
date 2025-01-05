@@ -15,7 +15,7 @@
     <!-- Login Page -->
     <div class="login">
         <input id="input" type="text">
-        <input id="input2" type="text">
+        <input id="input2" type="password">
         <input class="input-button" type="button" value="Submit" onClick="postCode()">
     </div>
 
@@ -33,19 +33,19 @@
 
             <!-- == Upgardes to Add Bitcoin every Click == -->
             <div class="upgrade">
-                <p class="name"><strong>Bitcoin miner</strong></p>
-                <p class="upgradeDescription">+<span id="upgrade1Add">1</span> Bitcoin per Click</p>
+                <p class="name"><strong>Bitcoin clicker</strong></p>
+                <p class="upgradeDescription">+<span id="upgrade1Add">0.5</span> Bitcoin per Click</p>
                 <p class="upgradeOwned">Owned: <span id="upgrade1Owned">0</span></p>
                 <div class="upgradeCostButton" onclick="upgrade1()">
                     <p class="upgradeCost"><strong>Cost: <span id="upgrade1Cost">25</span></strong></p>
                 </div>
             </div>
             <div class="upgrade">
-                <p class="name"><strong>Bitcoin miner</strong></p>
-                <p class="upgradeDescription">+<span id="upgrade2Add">5</span> Bitcoin per Click</p>
+                <p class="name"><strong>Old Cpu</strong></p>
+                <p class="upgradeDescription">+<span id="upgrade2Add">2.5</span> Bitcoin per Click</p>
                 <p class="upgradeOwned">Owned: <span id="upgrade2Owned">0</span></p>
                 <div class="upgradeCostButton" onclick="upgrade2()">
-                    <p class="upgradeCost"><strong>Cost: <span id="upgrade2Cost">75</span></strong></p>
+                    <p class="upgradeCost"><strong>Cost: <span id="upgrade2Cost">100</span></strong></p>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                 <p class="upgradeDescription">+<span id="upgrade1AddS">1</span> Bitcoin per Second</p>
                 <p class="upgradeOwned">Owned: <span id="upgrade1OwnedS">0</span></p>
                 <div class="upgradeCostButton" onclick="upgrade1S()">
-                    <p class="upgradeCost"><strong>Cost: <span id="upgrade1CostS">150</span></strong></p>
+                    <p class="upgradeCost"><strong>Cost: <span id="upgrade1CostS">500</span></strong></p>
                 </div>
             </div>
         </div>
@@ -75,6 +75,8 @@
 
         <!-- === External JavaScript === -->
         <script src="script.js"></script>
+
+        <!-- === Internal JavaScript === -->
         <script>
             var input = document.getElementById("input");
             var input2 = document.getElementById("input2");
@@ -85,6 +87,7 @@
                 }
             } 
         </script>
+
 </body>
 
 </html>
