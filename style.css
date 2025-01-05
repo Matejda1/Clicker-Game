@@ -3,8 +3,55 @@
     padding: 0;
 }
 
+/* Login page */
+
 .login {
     display: block;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+}
+
+.login h1 {
+    margin-bottom: 20px;
+}
+
+.login div {
+    margin-bottom: 10px;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
 }
 
 /* All game */

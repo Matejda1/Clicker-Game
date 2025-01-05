@@ -12,11 +12,19 @@
 
 <body draggable="false">
 
-    <!-- Login Page -->
+    <!-- === Login Page === -->
     <div class="login">
-        <input id="input" type="text">
-        <input id="input2" type="password">
-        <input class="input-button" type="button" value="Submit" onClick="postCode()">
+        <h1>Přihlášení</h1>
+        <div>
+            <label for="username">Uživatelské jméno:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Heslo:</label>
+            <input type="password" id="password">
+        </div>
+        <button onclick="login()">Přihlásit se</button>
+        <div id="loginError" class="error"></div>
     </div>
 
     <!-- === All game ===-->
@@ -78,14 +86,17 @@
 
         <!-- === Internal JavaScript === -->
         <script>
-            var input = document.getElementById("input");
-            var input2 = document.getElementById("input2");
-            function postCode() {
-                if (input.value == "Admin", input2.value == "Admin111") {
+            function login() {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+
+                if (username === "Admin" && password === "Admin111") {
                     document.querySelector(".login").style.display = "none";
                     document.querySelector(".game").style.display = "block";
+                } else {
+                    document.getElementById("loginError").innerText = "Nesprávné uživatelské jméno nebo heslo.";
                 }
-            } 
+            }
         </script>
 
 </body>
