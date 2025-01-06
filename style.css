@@ -56,13 +56,13 @@
 
 /* All game */
 
-.game {
+/* .game {
     display: grid;
     grid-template-columns: 49% 51%;
     grid-template-areas:
         "stats stats"
         "bitcoin upgrades";
-}
+} */
 
 .game {
     display: none;
